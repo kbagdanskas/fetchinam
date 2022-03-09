@@ -1,0 +1,210 @@
+body {
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: rgb(238, 238, 238);
+  height: 100%;
+  width: 60%;
+}
+
+#sectionRegulator {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#numberContainer {
+  width: calc(50% - 20px);
+  height: 85px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.firstContainerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(252, 169, 169) 10%, rgb(119, 0, 0));
+  width: 40%;
+  height: 85px;
+}
+.secondContainerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(182, 255, 182) 10%, rgb(1, 143, 1));
+  width: 40%;
+  height: 85px;
+}
+.thirdContainerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(106, 208, 255) 10%, rgb(0, 114, 167));
+  width: 40%;
+  height: 85px;
+}
+.fourthContainerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(109, 233, 255) 10%, rgb(0, 165, 194));
+  width: 40%;
+  height: 85px;
+}
+
+#containerRight > h2,
+h4 {
+  width: 100%;
+  margin: 0;
+}
+
+#containerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.svgs {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.noticeBoard {
+  width: calc(100% - 20px);
+  height: 300px;
+  margin: 10px;
+  background-color: #fff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 300px;
+}
+
+.boardUp > h3 {
+  font-size: 14px;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+.boardUp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10%;
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.expenseBoard {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: calc(100% - 20px);
+  height: 300px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.expenseUp > h3 {
+  font-size: 14px;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+.expenseUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10%;
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.expenseUp > input {
+  width: 50%;
+  border-radius: 8px;
+  border: 1px solid grey;
+  margin: 5px;
+  height: 1.5rem;
+}
+
+.expenseUp > button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: blue;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 12px;
+  margin: 5px;
+  height: 1.5rem;
+}
+
+.expenseTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+.expenseTable td,
+.expenseTable th {
+  padding: 10px;
+}
+
+.expenseTable thead tr {
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.expenseTable tbody tr:nth-of-type(even) {
+  background-color: #eeeeee;
+}
+
+#container {
+  width: 50%;
+  max-width: 50rem;
+  min-width: 20rem;
+  margin: 0 auto;
+}
+
+.block {
+  background: cyan;
+  padding: 1rem;
+  text-align: center;
+}
+
+.boardFirst {
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.boardFirst:nth-of-type(even) {
+  background-color: #eeeeee;
+}
+
+.insideBoard {
+  margin: 10px 0 10px 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
